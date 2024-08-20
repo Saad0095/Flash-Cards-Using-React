@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen my-20 space-y-6">
+    <div className="flex flex-col items-center min-h-screen my-20 space-y-20">
       <AddCard
         front={front}
         back={back}
