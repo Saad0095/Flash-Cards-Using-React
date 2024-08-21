@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen my-20 space-y-20">
+    <div className="container mx-auto flex flex-col items-center min-h-screen my-20 space-y-20">
       <AddCard
         front={front}
         back={back}
@@ -41,7 +41,9 @@ function App() {
         setBack={setBack}
         handleAddCard={handleAddCard}
       />
-      {flashCards && <Cards flashCards={flashCards} handleShowAnswer={handleShowAnswer}/>}
+      {flashCards && (
+        <Cards flashCards={flashCards} handleShowAnswer={handleShowAnswer} />
+      )}
     </div>
   );
 }
